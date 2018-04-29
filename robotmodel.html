@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Robot Motion Planning using RRT</title>
+	</head>
+	<body>
+		<div id="outerbody" style="width:1000px;height:100%;margin:0 Auto;">
+			<header style="height:200px;background:url('images/unirobot.jpg');">
+			<br><br><br>
+			<h1 style="color:black; text-align:center;">Robot Motion Planning for Unicycle Robot<br> Using RRT </h1>
+			</header>
+			<div>
+			<section style="background-color:silver;float:left; width:25%;height:750px">
+			<ul style="list-style-type:none;"><!--<h2 style="color:white;">Menu</h2>-->
+				<li><a href="index.html">Home</a></li><hr>
+				<li><a href="About Us.html">About Us</a></li><hr>
+				<li><a href="robotmodel.html">Robot Model</a></li><hr>
+				<li><a href="future.html">Future Works</a></li><hr>
+				<li><a href="Contact Us.html">Contact Us</a></li><hr>
+				<li><a href="">Github Link</a></li><hr>		
+			</ul>
+			</section>
+			<section style="background-color:white;float:right;width:73%;">
+				<h3 style="color:blue">Robot Model: </h3><hr>
+				<p>
+					Unicycle (rotating and translating underactuated robot) with configuration q = (x, y, Ɵ), (6-dimensional state space with 2 dofs in configuration space) non-holonomic motion model with motion constraint, I have implemented the collision detection myself without using any collision detection package as my obstacles are mostly circular or elliptical (trees as mentioned earlier). For 3D implementation I have used Klampt.</p>
+				<p>	
+					I used python as my programming language for this project. Starting with a point robot (assuming holonomic motions) and implemented RRT for holonomic motions just to kick start the project and later implemented algorithm for non-holonomic motions. For better performance I have used the bi-directional RRT as it is a goal biased search which yields efficient results. I have not considered special cases like the pits (if there any in the farm) as I used planar terrain for simplicity, this non planar terrain case can be considered as polygonal obstacles in 2D implementation and can be achieved in future works.</p>
+				
+			</section>
+			</div>
+		
+		</div>
+		
+	</body>
+</html>

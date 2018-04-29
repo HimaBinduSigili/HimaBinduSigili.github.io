@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Robot Motion Planning using RRT</title>
+	</head>
+	<body>
+		<div id="outerbody" style="width:1000px;height:100%;margin:0 Auto;">
+			<header style="height:200px;background:url('images/unirobot.jpg');">
+			<br><br><br>
+			<h1 style="color:black; text-align:center;">Robot Motion Planning for Unicycle Robot<br> Using RRT </h1>
+			</header>
+			<div>
+			<section style="background-color:silver;float:left; width:25%;height:800px">
+			<ul style="list-style-type:none;"><!--<h2 style="color:white;">Menu</h2>-->
+				<li><a href="index.html">Home</a></li><hr>
+				<li><a href="About Us.html">About Us</a></li><hr>
+				<li><a href="robotmodel.html">Robot Model</a></li><hr>
+				<li><a href="future.html">Future Works</a></li><hr>
+				<li><a href="Contact Us.html">Contact Us</a></li><hr>
+				<li><a href="">Github Link</a></li><hr>		
+			</ul>
+			</section>
+			<section style="background-color:white;padding-left:10px;text-align:justify;float:right;width:73%;height:100%">
+				<h2 style="color:blue">  Home </h2>
+				<p>This is a term project for ITCS 6152: Robot Motion Planning Class</p><hr>
+				<h3 style="color:blue">Problem Statement: </h3>
+				<p style="text-align:justify;font-size:16px">
+					My Objective is to find a path for a non-holonomic single wheeled robot(unicycle) moving in a fruit farm (static environment) with a lot of trees in between (circular/elliptical obstacles) such that it can effectively make its way towards ripened fruits (goal). <hr>
+					In my project I have implemented a sampling-based motion planning technique for the path planning problem. As robot is a non-holonomic robot I used RRT (Rapidly exploring random trees) motion planning algorithm. Since the environment is static, having the knowledge of the environment will be very useful in long run hence values (position of obstacles) are not provided dynamically.
+					<hr>
+					Following video shows the simulation of the robot motion. We can see that this is not the optimal path for the robot as we used RRT algorithm. For Optimal path RRT star should be implemented which is considered as a future work.
+					<hr>
+				</p>
+				
+				<video align="center";width="560" height="400" controls>
+					<source src="videos/video.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				
+				<br>
+				<hr>
+				<p>&copy; Robot Motion Planning Class Project by Bindu</p>
+			</section>
+			</div>
+		
+		</div>
+		
+	</body>
+</html>
