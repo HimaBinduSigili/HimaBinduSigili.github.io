@@ -23,11 +23,16 @@
 			</ul>
 			</section>
 			<section style="background-color:white;text-align:justify;float:right;width:73%;">
-				<h3 style="color:blue">Robot Model: </h3><hr>
+				<h3 style="color:blue">Robot Model and Implemtation Details: </h3><hr>
 				<p>
 					Unicycle (rotating and translating underactuated robot) with configuration q = (x, y, Ɵ), (6-dimensional state space with 2 dofs in configuration space) non-holonomic motion model with motion constraint, I have implemented the collision detection myself without using any collision detection package as my obstacles are mostly circular or elliptical (trees as mentioned earlier). For 3D implementation I have used Klampt.</p>
 				<p>	
-					I used python as my programming language for this project. Starting with a point robot (assuming holonomic motions) and implemented RRT for holonomic motions just to kick start the project and later implemented algorithm for non-holonomic motions. For better performance I have used the bi-directional RRT as it is a goal biased search which yields efficient results. I have not considered special cases like the pits (if there any in the farm) as I used planar terrain for simplicity, this non planar terrain case can be considered as polygonal obstacles in 2D implementation and can be achieved in future works.</p>
+					I used python as my programming language for this project. In my project I have implemented a sampling-based motion planning technique for the path planning problem. As robot is a non-holonomic robot I used RRT (Rapidly exploring random trees) motion planning algorithm. Since the environment is static, having the knowledge of the environment will be very useful in long run hence values (position of obstacles) are not provided dynamically. All the positions of the obstacles (trees and fruits) have been specified in the buildWorldnew.py which contains code to build the environment. Start and goal configurations can be changed dynamically, and simulation starts only if the start and goal configurations are collision free in c-space.
+simpleWorld.xml contains the information on the robot that is being used and the size of the terrain. </p>
+<p>I have created my own robot model unicycle.rob by tweaking the already existing sphero.rob file (replacing the sphero.off file with cylinder_y.off file in the sphere.rob) After the robot model is ready we start executing MyRRT.py which is the main file that creates visualization for kinematic simulations. Inside this file RRTplanner method of RRT class is called to implement the algorithm that lies in a separate file called RRTUtil.py. Here in this class for 5000 samples we try to find a path from initial configuration to goal configuration using bidirectional RRT. User defined class called Node serves the purpose of a tree vertex and all the instances that are formed while finding the path are stored in a List data structure.</p>
+<p>
+  I have used my own collision detection method, as my obstacles are static I have stored their configurations as well as their names in a list so that if the robot collides with the obstacle this method checks if the sum of the radius of the circle or ellipse and the radius of the unicycle is less than the distance between the center of the obstacle and the center of the robot then return true indicating collision, if not less than then it returns false indicating no collision. Also, I should consider the walls (boundaries of the farm) as obstacles so I have checked the robot’s x and y co-ordinates should be less than the x and y co-ordinates of the wall to check if the robot is collision free. </p>
+
 				
 			</section>
 			</div>
