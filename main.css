@@ -1,0 +1,295 @@
+/*################rows and columns code####################*/
+
+.row{
+    width=100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+/*##########################*/
+nav, header, footer{
+      display:block;
+}
+
+body{
+    line-height: 1;
+    margin:0;
+}
+
+label{
+    font-size: 30px;
+    font-weight: 1000;
+    color: #8c1aff;
+}
+
+button{
+    background-color: #8c1aff;
+    text-align:center;
+    font-size:25px;
+    color:#fff;
+    border-radius: 5px;
+    padding: 10px 40px;
+}
+
+nav{
+    width=100%;
+    margin=0px;
+    }
+
+nav ul{
+    background-color: #ffb3ff;
+    overflow: hidden;
+    margin=0px;
+    padding-bottom:1%;
+    padding-top:1%; 
+}
+
+
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    font-size:20px;
+    min-height:15px;
+    text-align: center;
+    padding:1px;
+    text-transform: uppercase;
+    color:black;
+    }
+
+ul.topnav li.topnav-right{
+    float:right;
+}
+
+ul.topnav li a:hover{
+    background-color: #8c1aff;
+    color: #fff;
+}
+
+ul.topnav li.ddicon{
+    display: none;
+}
+
+ul#ddclick.topnav{
+    margin: 0px;
+}
+
+
+/*################section 2###############*/
+
+div.container{
+    background: linear-gradient(#8c1aff, #f2e6ff);
+    margin:0px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    
+}
+
+h1.customize{
+    color: #fff;
+    font-size:56px;
+    margin-top:0px;
+    line-height: 70px;
+}
+
+h1.sec2header{
+    text-align: center;
+    font-size:65px;
+}
+
+div p.user{
+    font-size: 30px;
+    color: #fff;
+}
+
+input{
+    font-size: 20px;
+    width:400px;
+    min-width: 100px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+
+.content{
+    margin-left: 30%;
+}
+.rightcol{
+    margin-left: 15%;
+}
+.videocontainer iframe{
+    min-width: 100px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+/*#####################  section 3  ######################*/
+div.box{
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+    margin:20px;
+    padding: 20px;
+    border-radius: 7px;
+    }
+div.sec3{
+    text-align: center;
+}
+
+div.box p{
+    font-size: 20px;
+}
+
+div.icon {
+    width=100%
+}
+
+div.butt1{
+    padding:10px;
+}
+
+div.content3 p{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:10px;
+    text-align: center;
+    }
+
+div.sec4 img{
+    width=100%;
+    margin-left: 30px;
+}
+
+div.col-3 h1{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.foo3{
+    background-color: #8c1aff;
+    color:#fff;
+    padding-left: 10%;
+}
+
+div.foot1 ul{
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0; 
+    line-height: 20px;
+}
+
+
+
+
+/*###############mobile responsive code#######################*/
+
+@media screen and (max-width:680px){
+    
+    ul.topnav li:not(:nth-child(1)){
+        display:none;
+    }
+    ul.topnav li.ddicon{
+        display: block;
+        float: right;
+    }
+    ul.topnavresponsive li.ddicon{
+        position: absolute;
+        top:0;  
+        right:0;
+    }
+    ul.topnavresponsive{
+        
+        position:relative;  
+    }
+    
+    ul.topnavresponsive li{
+        list-style: none;
+        display: inline;
+        float:none;
+        
+    }
+    ul.topnavresponsive li a{
+        display: block;
+        text-align: left;
+        display: block;
+    text-decoration: none;
+    font-size: 20px;
+    min-height: 25px;   
+    padding=30px;
+    text-transform: uppercase;
+    color:black;
+    }
+    
+    header h1.sec2header{
+        font-size:40px;
+    }
+    
+    .col-6, .col-4, .col-7, .col-5, .col-3  {width: 100%;
+    margin:0px;}
+    .content{
+    margin:15px;
+    }
+    
+    
+    
+    .rightcol{
+    margin-left: 15px;    
+    margin-right: 30px;
+    }
+    
+    div.content3 p{
+        font-size: 20px;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    div.slope{
+        margin:10px;
+    }
+    
+    div.slope img{
+        width:100%;
+        margin: 0px;
+    }
+    
+    input{
+        width:300px;
+    }
+    
+    .videocontainer iframe{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+}
+

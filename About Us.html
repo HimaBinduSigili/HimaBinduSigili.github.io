@@ -3,46 +3,71 @@
 <html>
 	<head>
 		<title>Robot Motion Planning using RRT</title>
+        <link rel="stylesheet" href="main.css">
 	</head>
 	<body>
 		<div id="outerbody" style="width:1000px;height:100%;margin:0 Auto;">
-			<header style="height:200px;background:url('images/unirobot.jpg');">
+			<header style="height:200px;background:url('images/bindu.jpg');">
 			<br><br><br>
-			<h1 style="color:black; text-align:center;">Robot Motion Planning for Unicycle Robot<br> Using RRT </h1>
+			<h3 style="color:black; padding-left: 200px; padding-bottom: 200px; text-align:center;">Hima Bindu Sigili<br>Department of Computing and Informatics <br> &nbsp; &nbsp;&nbsp; &nbsp;  University of North Carolina at Charlotte, NC 28262.<br> hsigili@uncc.edu </h3>
 			</header>
 			<div>
 			<section style="background-color:#D2D7D3;float:left; width:25%;height:800px">
 			<ul style="list-style-type:none;"><!--<h2 style="color:white;">Menu</h2>-->
 				<li><a href="index.html">Home</a></li><hr>
-				<li><a href="About Us.html">About Us</a></li><hr>
-				<li><a href="robotmodel.html">Robot Model</a></li><hr>
-				<li><a href="future.html">Future Works</a></li><hr>
-				<li><a href="Contact Us.html">Contact Us</a></li><hr>
-				<li><a href="https://github.com/HimaBinduSigili/FinalProject6152/">Github Link</a></li><hr>
-				<li><a href="report.html"> Project Report</a></li>
+                <li><a href="fetch.html">Fetch</a></li><hr>
+                <li><a href="unicycle.html">Unicycle-RRT</a></li><hr>
+				<li><a href="About Us.html">About Me</a></li><hr>
+				<li><a href="Contact Us.html">Contact Me</a></li><hr>
+				<li><a href="https://github.com/HimaBinduSigili/FinalProject6152/">Github Link</a></li>
 			</ul>
 			</section>
 			<section style="background-color:white;padding:10px;float:right;width:73%;height:100%">
-				<h2 style="color:blue">  About Us </h2>
-				<p>This is a term project for ITCS 6152: Robot Motion Planning Class</p><hr>
-				<h3 style="color:blue">Problem Statement: </h3>
+				<h2 style="color:blue">  About Me </h2>
 				<p style="text-align:justify;font-size:16px">
-					My Objective is to find a path for a non-holonomic single wheeled robot(unicycle) moving in a fruit farm (static environment) with a lot of trees in between (circular/elliptical obstacles) such that it can effectively make its way towards ripened fruits (goal). In my project I have implemented a sampling-based motion planning technique for the path planning problem. As robot is a non-holonomic robot I used RRT (Rapidly exploring random trees) motion planning algorithm. Since the environment is static, having the knowledge of the environment will be very useful in long run hence values (position of obstacles) are not provided dynamically.
+					I am computer science graduate student at University of North Carolina, Charlotte. Interested in challenging tasks. I always strive for excellence. 
 				</p><hr>
 				
 				<p >Following are some of the videos of my work:<br>
-				  </p><p> 1. Robot motion planning <br>Using Single directional RRT</p>
-				<video width="260" height="180" controls >
-					<source src="videos/SDvideo.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					
-				 <p> 2. Robot motion planning Using Bi-directional RRT <br>
+				  </p>
+			
+                <div class="sec3">
+                <div class=row>
+                <div class=col-6>
+                <div class=rightcol>
+                <div class=videocontainer>
+                    <p> 1. Robot motion planning <br>Using Single directional RRT</p>
+                <iframe width="320" height="200" src="videos/SDvideo.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                </div>
+                    
+                     <div class=col-6>
+                <div class=leftcol>
+                <div class=videocontainer>
+                     <p> 2. Robot motion planning Using Bi-directional RRT <br>
 				 with unicycle moving in forward direction</p>
-				  <video align="center";width="260" height="180" controls>
-					<source src="videos/BDvideo.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
+                <iframe width="320" height="200" src="videos/BDvideo.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+                </div>
+                </div>
+                    </div>
+                <div class="sec3">
+                <div class=row>
+                                  
+                     <div class=col-6>
+                <div class=leftcol style="padding-left: 20%">
+                <div class=videocontainer>
+                     <p> 3. Fetch detecting faces </p>
+                <iframe width="640" height="400" src="images/facedetection.png" frameborder="0" ></iframe>
+                    </div>
+                </div>
+                </div>
+                </div>
+                    </div>
+					
+                
 			</section>
 			</div>
 		
